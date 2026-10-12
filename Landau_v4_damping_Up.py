@@ -8,9 +8,9 @@ from pathlib import Path
 import numpy as np
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 N, K, WINDOW, MEMORY, OSCILLATORS = 39, 7, 64, 32, 8
@@ -468,7 +468,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -481,7 +481,7 @@ Test: redovi 4635..4698
 LANDAU V4 DAMPING: prosek=1.4062; pogodaka 0..7=[13, 24, 16, 10, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 8,9,10,12,13,34,35
+SLEDECI RED 4699: 8,x,10,y,13,z,35
 Skor=0.9251476223; kandidata=14396
 Slobodan fazni transport bez nove pobude: energija t=0 13.4868291557; t=1 13.4868291557
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
@@ -489,7 +489,7 @@ Fazno mesanje je strukturna analogija; skor nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -502,7 +502,7 @@ Test: redovi 2908..2971
 LANDAU V4 DAMPING: prosek=1.2812; pogodaka 0..7=[14, 25, 19, 5, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 1,17,19,23,24,38,39
+SLEDECI RED 2972: 1,x,19,y,24,z,39
 Skor=0.4664211223; kandidata=14392
 Slobodan fazni transport bez nove pobude: energija t=0 9.4257382069; t=1 9.4257382069
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
@@ -510,7 +510,7 @@ Fazno mesanje je strukturna analogija; skor nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -523,7 +523,7 @@ Test: redovi 1664..1727
 LANDAU V4 DAMPING: prosek=1.0156; pogodaka 0..7=[21, 23, 18, 2, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 1,13,14,15,17,21,36
+SLEDECI RED 1728: 1,x,14,y,17,z,36
 Skor=0.5978874041; kandidata=14388
 Slobodan fazni transport bez nove pobude: energija t=0 8.8741131400; t=1 8.8741131400
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
@@ -537,9 +537,9 @@ Fazno mešanje sada služi za rangiranje celih kombinacija, bez predikcije prose
 Brzine komponenti izvode se iz stvarnih strukturnih promena.
 
 Fajl	                Sledeća kombinacija	Prosek pogodaka na 64 kola	Prethodna kombinacija
-Objedinjeni, red 4699	8,9,10,12,13,34,35	1,4062	                    1,2188
-Loto, red 2972	        1,17,19,23,24,38,39	1,2812	                    1,2969
-Loto Plus, red 1728	    1,13,14,15,17,21,36	1,0156	                    1,2969
+Objedinjeni, red 4699	8,x,10,y,13,z,35	1,4062	                    1,2188
+Loto, red 2972	        1,x,19,y,24,z,39	1,2812	                    1,2969
+Loto Plus, red 1728	    1,x,14,y,17,z,36	1,0156	                    1,2969
 
 Prednost na ovom testu postoji samo za objedinjeni fajl. 
 Provereni su fazno poništavanje, očuvanje energije pri slobodnom transportu, ponovljivost i hronologija.
