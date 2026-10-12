@@ -10,9 +10,9 @@ import numpy as np
 
 
 
-DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv"
+DEFAULT = "/data/loto7_4698_k80.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_2971.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_plus_1727.csv"
 
 
 
@@ -405,42 +405,42 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: redovi 4587..4634; vmax=0.5; alpha=10; prosek=1.4792
 Test: redovi 4635..4698
 LANDAU V4 DAMPING: prosek=1.1875; pogodaka 0..7=[15, 28, 16, 4, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Pozadina bez talasa: prosek=1.5312; pogodaka 0..7=[11, 22, 19, 10, 2, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 7,12,17,23,30,31,37
+SLEDECI RED 4699: 7,x,17,y,30,z,37
 Trosak projekcije=2.2835022868; globalni minimum potvrden.
 Energija komponenti: t=0 39.0188618985; t=1 39.0188618985
 Model koristi fazno mesanje bez trenja; trosak rangiranja nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: redovi 2860..2907; vmax=2; alpha=10; prosek=1.4792
 Test: redovi 2908..2971
 LANDAU V4 DAMPING: prosek=1.3594; pogodaka 0..7=[14, 23, 19, 6, 2, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Pozadina bez talasa: prosek=1.2812; pogodaka 0..7=[12, 29, 17, 5, 1, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 7,15,19,27,31,32,33
+SLEDECI RED 2972: 7,x,19,y,31,z,33
 Trosak projekcije=2.0050834256; globalni minimum potvrden.
 Energija komponenti: t=0 35.5687051418; t=1 35.5687051418
 Model koristi fazno mesanje bez trenja; trosak rangiranja nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: redovi 1616..1663; vmax=2; alpha=100; prosek=1.4167
 Test: redovi 1664..1727
 LANDAU V4 DAMPING: prosek=1.1875; pogodaka 0..7=[15, 29, 14, 5, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Pozadina bez talasa: prosek=1.2344; pogodaka 0..7=[13, 27, 20, 4, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 6,10,16,21,27,33,37
+SLEDECI RED 1728: 6,x,16,y,27,z,37
 Trosak projekcije=1.1489766844; globalni minimum potvrden.
 Energija komponenti: t=0 13.8776012524; t=1 13.8776012524
 Model koristi fazno mesanje bez trenja; trosak rangiranja nije verovatnoca.
@@ -461,7 +461,7 @@ V4 je prošao proveru faznog poništavanja signala uz očuvanu energiju komponen
 Koristi fazno mešanje: uči amplitude i faze komponenti, čiji se zajednički signal menja dok njihova pojedinačna energija ostaje očuvana. Inspiracija je Landauov rad o elektronskoj plazmi.
 
 Predlog za red 4699:
-7, 12, 17, 23, 30, 31, 37
+7, x, 17, y, 30, z, 37
 
 Na poslednja 64 kola:
 Metod	Prosečan broj pogodaka
